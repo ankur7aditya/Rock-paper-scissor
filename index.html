@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="title">Rock Paper Scissor</p>
+    <button onclick="
+        playGame('Rock');
+    " class="move-button"><img src="/images/rock-emoji.png" alt="" class="move-icon"></button>
+
+    <button onclick="
+        playGame('Paper');
+    " class="move-button"><img src="/images/paper-emoji.png" alt="" class="move-icon"></button>
+
+    <button onclick="
+        playGame('Scissors');
+    " class="move-button"><img src="/images/scissors-emoji.png" alt="" class="move-icon"></button>
+
+    <p class="js-result"></p>
+    <p class="js-move"></p>
+    <p class="js-score"></p>
+
+    <button onclick="
+        user.win=0;
+        user.lose=0;
+        user.tie=0;
+        localStorage.removeItem('user');
+        showScore();
+    " class="reset-button">Reset Score</button>
+
+    <script src="scriptFile.js"></script>
+</body>
+
+</html>
