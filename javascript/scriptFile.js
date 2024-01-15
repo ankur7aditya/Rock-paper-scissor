@@ -24,7 +24,7 @@ function playGame(userMove)
     resultElem.innerHTML=result;
 
     const moveElem=document.querySelector('.js-move');
-    moveElem.innerHTML=`You <img src="/images/${userMove}-emoji.png" class="move-icon">  <img src="/images/${computerMove}-emoji.png" class="move-icon"> Computer`
+    moveElem.innerHTML=`You <img src="./${userMove}-emoji.png" class="move-icon">  <img src="./${computerMove}-emoji.png" class="move-icon"> Computer`
 
     showScore();
 
